@@ -1,0 +1,52 @@
+.achievements {
+  width: 100%;
+}
+
+.achievementCard {
+  background: #1a1a1a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.cardBody {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.cardBody h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.cardFooter {
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.sectionHeaderWrapper {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+}

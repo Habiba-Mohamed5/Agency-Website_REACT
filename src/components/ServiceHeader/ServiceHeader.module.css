@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1460px;
+  background-color: #1a1a1a;
+  margin: 80px auto 80px;
+  padding: 60px 40px 40px;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 16px;
+  gap: 24px;
+}
+
+.title {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h3 {
+  color: #fff;
+  font-size: 45px;
+  margin: 50px 0 20px;
+  line-height: 1.02;
+}
+
+.rightArrow {
+  vertical-align: middle;
+  width: 50px;
+  height: auto;
+  margin-inline: 10px;
+}
+
+.start {
+  font-size: 20px;
+  font-weight: 450;
+  position: relative;
+  color: #ce7d63;
+  margin-left: -10px;
+}
+
+.header p {
+  color: #595959;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.tags::-webkit-scrollbar {
+  display: none;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #cfcfcf;
+  border: 1px dashed rgba(255, 255, 255, 0.02);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.headImg {
+  flex: 0 0 40%;
+  max-width: 400px;
+  min-width: 250px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  object-fit: cover;
+  height: auto;
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 80px auto 50px;
+  }
+
+  .header h3 {
+    font-size: 28px;
+    margin: 20px 0 15px;
+  }
+
+  .start {
+    font-size: 16px;
+  }
+
+  .header p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .tags {
+    margin-top: 40px;
+  }
+
+  .headImg {
+    max-width: 100%;
+    width: 100%;
+    min-width: auto;
+    margin-top: 20px;
+  }
+}
+
+/* 💻 تابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    padding: 50px 30px;
+  }
+
+  .header h3 {
+    font-size: 36px;
+  }
+
+  .headImg {
+    max-width: 320px;
+  }
+}

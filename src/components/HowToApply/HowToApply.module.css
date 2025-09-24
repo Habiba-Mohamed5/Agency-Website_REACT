@@ -1,0 +1,103 @@
+.containerBox {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: black;
+  border: #1a1a1a 0.25rem solid;
+  border-radius: 0.875rem;
+  margin-block: 4rem;
+}
+
+.titleBox {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: #1a1a1a;
+  border: #1a1a1a 0.25rem solid;
+  border-radius: 0.875rem;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.applyCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #212121;
+  border-radius: 0.875rem;
+  color: white;
+}
+
+.applyCardBody .step {
+  padding-block: 0.8rem;
+  padding-inline: 1.25rem;
+  color: #81807e;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.cardTitle {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: #1f1f1f;
+  border-block: #262626 0.125rem solid;
+  color: white;
+}
+
+.applyCardFooter {
+  margin-top: auto;
+  padding: 1.25rem;
+  background: #212121;
+  color: #81807e;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
+.knowMoreLink {
+  background-color: transparent;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.knowCircle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.knowMoreLink:hover .knowCircle {
+  background: #d87961;
+  color: #fff;
+  border-color: #d87961;
+  box-shadow: 0 0 8px rgba(216, 121, 97, 0.5);
+}

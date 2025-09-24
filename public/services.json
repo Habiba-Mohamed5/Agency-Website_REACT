@@ -1,0 +1,50 @@
+[
+    {
+      "id": 5,
+      "title": "Web Development",
+      "icon": "https://picsum.photos/60/60?random=101",
+      "desc": "Description for web development service",
+      "price": "STARTS FROM $999",
+      "projectsTitle": "Web Development Projects",
+      "images": [
+        "https://picsum.photos/seed/web1/300/200",
+        "https://picsum.photos/seed/web2/300/200"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Mobile App",
+      "icon": "https://picsum.photos/60/60?random=102",
+      "desc": "Description for mobile app service",
+      "price": "STARTS FROM $999",
+      "projectsTitle": "Mobile App Projects",
+      "images": [
+        "https://picsum.photos/seed/mobile1/300/200",
+        "https://picsum.photos/seed/mobile2/300/200"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "UI/UX Design",
+      "icon": "https://picsum.photos/60/60?random=103",
+      "desc": "Description for UI/UX service",
+      "price": "STARTS FROM $999",
+      "projectsTitle": "UI/UX Projects",
+      "images": [
+        "https://picsum.photos/seed/uiux1/300/200",
+        "https://picsum.photos/seed/uiux2/300/200"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Digital Marketing",
+      "icon": "https://picsum.photos/60/60?random=104",
+      "desc": "Description for marketing service",
+      "price": "STARTS FROM $999",
+      "projectsTitle": "Digital Marketing Projects",
+      "images": [
+        "https://picsum.photos/seed/marketing1/300/200",
+        "https://picsum.photos/seed/marketing2/300/200"
+      ]
+    }
+  ]

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Home</title>
+
+  <style>
+    #ourWorks {
+      width: 100%;
+      font-family: serif;
+      font-size: 12px;
+      background-color: #030303;
+      color: white;
+
+
+  
+    }
+
+    /* Header */
+    #ourWorks .head5 {
+      background-color: #1A1A1A;
+      color: white;
+      border-radius: 20px;
+      margin: 10px;
+      padding: 20px 40px;
+    }
+
+    #ourWorks .head_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #ourWorks .head_content h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    #ourWorks .readmore {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #B3B3B2;
+      cursor: pointer;
+    }
+
+    #ourWorks .readmore img {
+      width: 50px;
+      height: auto;
+    }
+
+    /* Containers */
+    #ourWorks #container1,
+    #ourWorks #container2 {
+      display: flex;
+      gap: 10px;
+      background-color: #0F0F0F;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #333;
+      height: 330px;
+    }
+
+    /* Box1 */
+    #ourWorks #container1 #box1,
+    #ourWorks #container2 #box1 {
+      background-color: #1A1A1A;
+      border-radius: 20px;
+      padding: 2px;
+      width: 430px;
+      position: relative;
+      color: #fff;
+    }
+
+    #ourWorks #box1 h1 {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #ourWorks #box1 p {
+      background-color: #3a3a3a;
+      padding: 6px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    #ourWorks .dot {
+      width: 3px;
+      height: 3px;
+      background-color: orange;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    /* Box2 */
+    #ourWorks #box2 .member {
+      background-color: #1A1A1A;
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 400px;
+      height: 130px;
+    }
+
+    #ourWorks #box2 .member h1 {
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    #ourWorks #box2 .member p {
+      background-color: #1F1F1F;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      color: #E6E6E6;
+      display: inline-block;
+    }
+
+    #ourWorks #box2 .booking {
+      background-color: #1A1A1A;
+      border-radius: 20px;
+      padding: 2px;
+      margin: 3px 0 10px 0;
+    }
+
+    #ourWorks #box2 .booking h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      font-size: 20px;
+    }
+
+    #ourWorks #box2 .book_butt button {
+      background-color: #CE7D63;
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #0F0F0F;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    /* Readmore Button */
+    #ourWorks #box1 #Readmore {
+      position: absolute;
+      top: 44px;
+      right: 20px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      gap: 6px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 1024px) {
+
+      #ourWorks #container1,
+      #ourWorks #container2 {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+      }
+
+      #ourWorks #box1,
+      #ourWorks .boxing,
+      #ourWorks #box2 {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+      }
+
+      #ourWorks #box1 p,
+      #ourWorks #box2 p {
+        font-size: 20px;
+      }
+
+      #ourWorks .boxing img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      #ourWorks #box1 #Readmore {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+      }
+
+      #ourWorks .member,
+      #ourWorks .booking {
+        width: 100%;
+      }
+
+      #ourWorks .book_butt button {
+        width: 100%;
+      }
+
+      #ourWorks .member p {
+        display: inline-block;
+        width: auto;
+        font-size: 5px;
+        padding: 0 7px;
+        margin: 10px 0;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      #ourWorks #container1,
+      #ourWorks #container2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      #ourWorks #box1,
+      #ourWorks .boxing,
+      #ourWorks #box2 {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      #ourWorks #box1 h1,
+      #ourWorks #box2 h1,
+      #ourWorks .booking h1 {
+        font-size: 18px;
+      }
+
+      #ourWorks .member p {
+        display: inline-block;
+        width: auto;
+        font-size: 5px;
+        padding: 0 7px;
+        margin: 10px 0;
+      }
+
+      #ourWorks .boxing img {
+        width: 100%;
+        height: auto;
+      }
+
+      #ourWorks #box1 #Readmore {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+      }
+
+      #ourWorks .book_butt button {
+        font-size: 13px;
+        padding: 12px;
+      }
+    }
+  </style>
+
+
+  <!-- <style>
+    body {
+      font-family: serif;
+      font-size: 12px;
+      background-color: #030303;
+      max-width: 1400px;
+      margin: auto;
+      line-height: 1.5;
+
+    }
+
+
+
+    /* Header */
+    .head5 {
+      background-color: #1A1A1A;
+      color: white;
+      border-radius: 20px;
+      margin: 10px;
+      padding: 20px 40px;
+    }
+
+    .head_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .head_content h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .readmore {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #B3B3B2;
+      cursor: pointer;
+    }
+
+    .readmore img {
+      width: 50px;
+      height: auto;
+    }
+
+
+    #container1,
+    #container2 {
+      display: flex;
+      gap: 10px;
+      background-color: #0F0F0F;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #333;
+      height: 330px;
+
+
+
+    }
+
+
+    /* Box1  */
+    #box1 {
+      background-color: #1A1A1A;
+      border-radius: 20px;
+      padding: 2px;
+      width: 430px;
+      position: relative;
+      color: #fff;
+
+
+    }
+
+    #box1 h1 {
+
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #box1 p {
+      background-color: #3a3a3a;
+      padding: 6px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 3px;
+      height: 3px;
+      background-color: orange;
+      border-radius: 50%;
+      display: inline-block;
+      /***/
+      margin: 0 5px;
+    }
+
+
+
+    /* Box2  */
+
+
+    .member {
+      background-color: #1A1A1A;
+      border-radius: 12px;
+      padding: 10x;
+      margin-bottom: 10px;
+      width: 400px;
+      height: 130px;
+
+    }
+
+    .member h1 {
+      grid-column: 1 / -1;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    .member p {
+      background-color: #1F1F1F;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      color: #E6E6E6;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .booking {
+      background-color: #1A1A1A;
+      border-radius: 20px;
+      padding: 2px;
+      margin: 3px 0 10px 0;
+    }
+
+    .booking h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      font-size: 20px;
+    }
+
+
+    .book_butt button {
+      background-color: #CE7D63;
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #0F0F0F;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+
+
+    #Readmore {
+      position: absolute;
+      top: 44px;
+      right: 20px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      gap: 6px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+
+      #container1,
+      #container2 {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+
+      }
+
+
+      #box1,
+      .boxing,
+      #box2 {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+      }
+
+      #box1 p,
+      #box2 p {
+        font-size: 20px;
+      }
+
+      .boxing img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      #Readmore {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+      }
+
+      .member,
+      .booking {
+        width: 100%;
+      }
+
+      .book_butt button {
+        width: 100%;
+      }
+
+      .member p {
+        display: inline-block;
+        width: auto;
+        font-size: 5px;
+        padding: 0 7px;
+        margin: 10px 0;
+
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      #container1,
+      #container2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      #box1,
+      .boxing,
+      #box2 {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      #box1 h1,
+      #box2 h1,
+      .booking h1 {
+        font-size: 18px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .member p {
+          display: inline-block;
+          width: auto;
+          font-size: 5px;
+          padding: 0 7px;
+          margin: 10px 0;
+
+
+
+        }
+      }
+
+
+      .boxing img {
+        width: 100%;
+        height: auto;
+      }
+
+      #Readmore {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+      }
+
+      .book_butt button {
+        font-size: 13px;
+        padding: 12px;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+  <section id="ourWorks">
+    <div class="head5">
+      <div class="head_content">
+        <h1>Our Works</h1>
+        <button class="readmore">
+          <img src="Button.png" alt="arrow"> ALL Works
+        </button>
+      </div>
+    </div>
+
+    <div id="container1">
+      <div id="box1">
+        <h1><img src="star.png" alt="star" width="40px" height="40px"> Zenith Fitness App</h1>
+        <p>Category <span class="dot"></span> <span style="color:aliceblue;">Mobile App Development</span></p>
+        <p>Time Taken <span class="dot"></span> <span style="color:aliceblue;">6 months</span></p>
+        <p style=" color: #B3B3B2; background-color: transparent; margin-top: 20px;">An all-in-one health and wellness
+          app
+          that offers personalized fitness plans, nutrition guidance</p>
+        <button id="Readmore"><img src="Button.png" alt="arrow" width="40px"> Details</button>
+      </div>
+
+      <div class="boxing">
+        <img src="style.png" alt="Project Image" width="440px" height="330px">
+      </div>
+
+      <div id="box2">
+        <div class="member">
+          <h1>Technologies Used</h1>
+          <p>React Native</p>
+          <p>Firebase</p>
+          <p>Redux</p>
+          <p>Rest Api</p>
+          <p>MongoDB</p>
+        </div>
+        <div class="booking">
+          <h1>Team Members <img src="memb1.png" alt="Team" width="230px"></h1>
+        </div>
+        <div class="book_butt">
+          <button>Book A Call</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="container2">
+      <div id="box1">
+        <h1><img src="lamp.png" alt="lamp" width="40px" height="40px"> A-Aura Ecommerce</h1>
+        <p>Category <span class="dot"></span> <span style="color:aliceblue;">Web Design & Development</span></p>
+        <p>Time Taken <span class="dot"></span> <span style="color:aliceblue;">3 months</span></p>
+        <p style=" color: #B3B3B2; background-color: transparent;">A complete overhaul of a corporate website to enhance
+          its brand identity and user experience.</p>
+        <button id="Readmore"><img src="Button.png" alt="arrow" width="40px"> Details</button>
+      </div>
+
+      <div class="boxing">
+        <img src="style2.png" alt="Project Image" width="440px" height="330px">
+      </div>
+
+      <div id="box2">
+        <div class="member">
+          <h1>Technologies Used</h1>
+          <p>React Native</p>
+          <p>Firebase</p>
+          <p>Redux</p>
+          <p>Rest Api</p>
+          <p>MongoDB</p>
+        </div>
+        <div class="booking">
+          <h1>Team Members <img src="memb2.png" alt="Team" width="230px"></h1>
+        </div>
+        <div class="book_butt">
+          <button>Book A Call</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- <section id="ourWorks">
+  <div class="head5">
+    <div class="head_content">
+      <h1>Our Works</h1>
+      <button class="readmore">
+        <img src="Button.png" alt="arrow"> ALL Works
+      </button>
+    </div>
+  </div>
+
+  <div id="container1">
+    <div id="box1">
+      <h1><img src="star.png" alt="star" width="40px" height="40px"> Zenith Fitness App</h1>
+      <p>Category</span> <span class="dot"></span> <span style="color:aliceblue;">Mobile App Development</span></p>
+      <p>Time Taken</span> <span class="dot"></span> <span style="color:aliceblue;">6 months</span></p>
+      <p style=" color: #B3B3B2; background-color: transparent; margin-top: 20px;">An all-in-one health and wellness
+        app
+        that offers personalized fitness plans, nutrition guidance</p>
+      <button id="Readmore"><img src="Button.png" alt="arrow" width="40px"> Details</button>
+    </div>
+
+    <div class="boxing">
+      <img src="style.png" alt="Project Image" width="440px" height="330px">
+    </div>
+
+    <div id="box2">
+      <div class="member">
+        <h1>Technologies Used</h1>
+        <p>React Native</p>
+        <p>Firebase</p>
+        <p>Redux</p>
+        <p>Rest Api</p>
+        <p>MongoDB</p>
+      </div>
+      <div class="booking">
+        <h1>Team Members <img src="memb1.png" alt="Team" width="230px"></h1>
+      </div>
+      <div class="book_butt">
+        <button>Book A Call</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="container2">
+    <div id="box1">
+      <h1><img src="lamp.png" alt="lamp" width="40px" height="40px"> A-Aura Ecommerce</h1>
+      <p>Category</span> <span class="dot"></span> <span style="color:aliceblue;">Web Design & Development</span></p>
+      <p>Time Taken</span> <span class="dot"></span> <span style="color:aliceblue;">3 months</span></p>
+      <p style=" color: #B3B3B2; background-color: transparent;">A complete overhaul of a corporate website to enhance
+        its brand identity and user experience.</p>
+      <button id="Readmore"><img src="Button.png" alt="arrow" width="40px"> Details</button>
+    </div>
+
+    <div class="boxing">
+      <img src="style2.png" alt="Project Image" width="440px" height="330px">
+    </div>
+
+    <div id="box2">
+      <div class="member">
+        <h1>Technologies Used</h1>
+        <p>React Native</p>
+        <p>Firebase</p>
+        <p>Redux</p>
+        <p>Rest Api</p>
+        <p>MongoDB</p>
+      </div>
+      <div class="booking">
+        <h1>Team Members <img src="memb2.png" alt="Team" width="230px"></h1>
+      </div>
+      <div class="book_butt">
+        <button>Book A Call</button>
+      </div>
+    </div>
+  </div>
+</section> -->
+</body>
+
+</html>

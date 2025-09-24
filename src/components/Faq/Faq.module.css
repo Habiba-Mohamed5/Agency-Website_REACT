@@ -1,0 +1,126 @@
+.faqSection {
+  margin-bottom: 100px;
+}
+
+.faqContainer {
+  max-width: 100% !important;
+  
+}
+
+.sectionHeaderWrapper {
+  background-color: #1a1a1a;
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.viewAllLink {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.viewAllLink .i {
+  border: 2px solid rgb(37, 36, 36);
+  border-radius: 50%;
+  background: #1a1a1a;
+  transition: all 0.3s ease;
+  color: white !important;
+}
+
+.viewAllLink:hover .i {
+  background: #ce7d63;
+  border-color: #ce7d63;
+  color: #fff;
+}
+
+.faqCard {
+  background: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faqCard:hover {
+  background: #222;
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faqAnswer {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #bbb;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faqIcon::after {
+  content: "+";
+  font-size: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.active .faqIcon::after {
+  content: "−";
+  transform: rotate(180deg);
+}
+
+.faqForm {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faqForm input,
+.faqForm textarea {
+  background: #0f0f0f;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.faqForm input:focus,
+.faqForm textarea:focus {
+  background: #0f0f0f;
+  color: #fff;
+  box-shadow: none;
+}
+
+.faqForm button {
+  background: #ce7d63;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+.faqForm input::placeholder,
+.faqForm textarea::placeholder {
+  color: #888;
+  opacity: 1;
+}

@@ -1,0 +1,164 @@
+.services {
+  padding: 15px;
+  background: #0e0e0e;
+  color: #fff;
+  border: 1px solid #424242;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.serviceBox {
+  background: #1a1a1a;
+  border: 1px solid rgba(47, 46, 46, 0.05);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleBox {
+  grid-column: span 2;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  background: #1a1a1a;
+}
+
+.serviceInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.serviceInfo img {
+  width: 40px;
+  height: 40px;
+}
+
+.serviceTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.serviceBtn {
+  display: flex;
+  margin-left: auto;
+}
+
+.serviceDesc {
+  color: #9b9b9d;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.serviceActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.bookSpan {
+  font-size: 12px;
+  color: #dcdcdc;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 17px;
+  color: #dcdcdc;
+  display: block;
+  margin-left: auto;
+}
+
+/* ===== Service Images ===== */
+.imageBox {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.servImgTitle {
+  display: flex;
+  padding: 20px;
+}
+
+.serviceImgTitle {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.servImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.servImgItem {
+  position: relative;
+}
+
+.servImgItem img {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.imgOverlayText {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.arrowLink {
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+
+
+.addBtn {
+  background: #ce7d63;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+
+}

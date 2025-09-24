@@ -1,0 +1,59 @@
+.featuresBox {
+  border: 1px solid transparent;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  background: #0f0f0f;
+  margin-top: 80px;
+}
+
+.featuresTitle {
+  border: 7px solid #0f0f0f;
+  border-radius: 16px;
+  background-color: #1a1a1a;
+  padding: 40px;
+  margin: 0;
+  text-align: left;
+  color: #f9efec;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: clamp(22px, 3vw, 38px);
+  text-transform: uppercase;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 16px 12px 5px;
+  padding: 0 8px 0;
+}
+
+.featuresCard {
+  background: #1a1a1a;
+  padding: 22px;
+  border-radius: 10px;
+  min-height: 259px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #f9efec;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.featuresCard p {
+  color: #b3b3b2;
+  font-size: 16px;
+}
+
+.featuresCard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.featuresCard img {
+  margin-right: auto;
+  margin-bottom: 24px;
+  width: 56px;
+}

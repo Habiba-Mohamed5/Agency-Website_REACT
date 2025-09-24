@@ -1,0 +1,82 @@
+            .teamSection {
+                background-color: #1a1a1a;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+
+            .teamContainer {
+                margin: auto;
+                border: 1px solid #333;
+                border-radius: 8px;
+                padding: 40px;
+            }
+
+            .sectionHeaderWrapper {
+                border-bottom: 1px solid #333;
+                padding-bottom: 25px;
+                margin-bottom: 30px !important;
+            }
+
+            .viewAllLink {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .memberCard {
+                background-color: #212121;
+                border: none;
+                padding: 20px;
+            }
+
+            .memberImageWrapper {
+                background-color: #e5b9a4;
+                border-radius: 5px;
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+
+            .memberImageWrapper img {
+                border-radius: 0;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .memberCard h3 {
+                margin-top: 15px;
+                margin-bottom: 5px;
+                color: #f0f0f0;
+                font-size: 1.1rem;
+                letter-spacing: 0.5px;
+            }
+
+            .memberCard p {
+                color: #b0b0b0;
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+            }
+
+            .socialIcons {
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .socialIcons a {
+                color: #e5b9a4;
+                font-size: 1.1rem;
+                transition: color 0.3s;
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 6px;
+            }
+
+            .socialIcons a:hover {
+                color: #f0c9b7;
+            }

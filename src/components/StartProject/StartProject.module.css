@@ -1,0 +1,152 @@
+.cardLeftBox,
+.cardRightBox {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 40px;
+    height: 100%;
+    color: white;
+}
+
+.cardLeftBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.startProjectLink {
+    color: #d87961;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.projectCircleContainer {
+    position: relative;
+    margin-right: 10px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectCircleOuter {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #d87961;
+    border-radius: 50%;
+    position: absolute;
+    border-right-color: transparent;
+    animation: spin 3s linear infinite;
+    will-change: transform;
+}
+
+.projectCircleInner {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #d87961;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.projectCircleInner span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.startProjectLink:hover .projectCircleInner {
+    background-color: #fff;
+    color: #d87961;
+    box-shadow: 0 0 12px rgba(216, 121, 97, 0.6);
+}
+
+.startProjectLink:hover {
+    color: #fff;
+}
+
+.startProjectLink:hover .projectCircleInner span {
+    transform: translateX(4px);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.aboutHeading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.aboutText {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.knowMoreLink {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.knowCircle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.knowMoreLink:hover .knowCircle {
+    background: #d87961;
+    color: #fff;
+    border-color: #d87961;
+    box-shadow: 0 0 8px rgba(216, 121, 97, 0.5);
+}
+
+@media (max-width: 768px) {
+    .mainHeading {
+        font-size: 2rem;
+    }
+}
